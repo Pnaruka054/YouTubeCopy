@@ -2,10 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
 body {
   background-color: rgb(15, 15, 15);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar {
 }
 
 .main {
@@ -13,7 +20,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 16px;
-  border: 1px solid red;
 }
 
 #mainchild1 {
@@ -135,17 +141,14 @@ body {
 /* main is compleated */
 
 .main1 {
-  border: 1px solid rgb(1, 225, 255);
-  display: grid;
+  display: flex;
   height: 90vh;
-  grid-template-columns: 2;
-  grid-template-rows: auto;
 }
 
 .left {
   padding: 12px;
   width: 240px;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .left::-webkit-scrollbar {
@@ -162,7 +165,7 @@ body {
 }
 
 .left:hover {
-    overflow-y: overlay;
+  overflow-y: overlay;
 }
 
 .leftchild {
@@ -196,6 +199,7 @@ body {
 .hr {
   border-bottom: 1px solid #535353;
   margin: 10px 0;
+  width: 204px;
 }
 
 #leftchildsvg1 {
@@ -262,4 +266,319 @@ body {
   font-size: 13px;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+  width: 83vw;
+}
+
+.center1 {
+  white-space: nowrap;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.center1::-webkit-scrollbar {
+  height: 0px;
+}
+
+.center1::-webkit-scrollbar-track {
+  background: #9b9b9b00;
+}
+
+.center1::-webkit-scrollbar-thumb {
+  background: #8888887e;
+  border-radius: 20px;
+}
+
+.center1:hover {
+  overflow-x: overlay;
+}
+
+.center1childs {
+  padding: 0 10px;
+  height: 32px;
+  border-radius: 10px;
+  padding-top: 5px;
+  background-color: #3d3d3d;
+  flex-shrink: 0;
+  margin: 12px;
+  width: ;
+}
+
+.center1childs a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.center1childs:hover {
+  background-color: #525252;
+}
+
+/* center completed */
+
+.center2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin-top: 10px;
+  overflow-y: scroll;
+  height: 78vh;
+}
+
+.center2::-webkit-scrollbar {
+  width: 0;
+}
+
+.center2childs {
+  margin: 10px;
+  height: 40vh;
+  min-height: 320px;
+  width: 20vw;
+  min-width: 343px;
+  position: relative;
+  cursor: pointer;
+}
+
+.center2childsdiv1 {
+  width: 100%;
+  min-width: 343px;
+  height: 60%;
+  min-height: 193px;
+  object-fit: contain;
+}
+
+.center2childsdiv1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.center2childsdiv2 {
+  display: flex;
+}
+
+.center2childsdiv2part1 {
+  width: 36px;
+}
+
+.center2childsdiv2part1 img {
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.center2childsdiv2part2div1 {
+  padding: 10px;
+}
+
+.center2childsdiv2part2div1 a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.center2childsdiv2part2div2 {
+  display: flex;
+  padding: 0 10px 10px 10px;
+}
+
+#center2childsdiv2part2div2p1 a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#center2childsdiv2part2div2p2 a {
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#center2childsdiv2part2div2p2 a:hover {
+  color: white;
+}
+
+.center2childsdiv2part2 {
+  width: 400px;
+}
+
+.center2childsdiv2part3 {
+  width: 30px;
+}
+
+.center2childsdiv2part3 svg {
+  margin-top: 5px;
+}
+
+.center2childsdiv3 {
+  text-align: center;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #263850;
+}
+
+.center2childsdiv3:hover {
+  cursor: pointer;
+  background-color: #616974;
+}
+
+.center2childsdiv3 p {
+  padding-top: 10px;
+}
+
+.center2childsdiv3 a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3da6ff;
+  font-weight: 500;
+}
+
+.center2childstimer {
+  position: absolute;
+  top: 170px;
+  right: 5px;
+}
+
+.center2childstimer p {
+  color: white;
+  background-color: #121212dc;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+/* sdfgsdgdfgdf */
+
+.center2childsmain {
+  margin: 10px;
+  height: 40vh;
+  min-height: 320px;
+  width: 20vw;
+  min-width: 343px;
+  position: relative;
+  cursor: pointer;
+}
+
+.center2childsdiv1main {
+  width: 100%;
+  min-width: 343px;
+  height: 60%;
+  min-height: 193px;
+  object-fit: contain;
+}
+
+.center2childsdiv1main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.center2childsdiv2main {
+  display: flex;
+}
+
+.center2childsdiv2part1main {
+  width: 36px;
+}
+
+.center2childsdiv2part1main img {
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.center2childsdiv2part2div1main {
+  padding: 10px;
+}
+
+.center2childsdiv2part2div1main a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.center2childsdiv2part2div2main {
+  padding: 0 10px 10px 10px;
+}
+
+.center2childsdiv2part2div2p1main a {
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.center2childsdiv2part2div2p1main a:hover {
+  color: white;
+}
+
+.center2childsdiv2part2div2pmain {
+  display: flex;
+  align-items: center;
+}
+
+.center2childsdiv2part2div2pmain svg {
+  margin-left: 5px;
+}
+
+.center2childsdiv2part2div2p2main {
+  color: rgb(179, 179, 179);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.center2childsdiv2part2main {
+  width: 400px;
+}
+
+.center2childsdiv2part3main {
+  width: 30px;
+}
+
+.center2childsdiv2part3main svg {
+  margin-top: 5px;
+  visibility: hidden;
+}
+
+.center2childsmain:hover .center2childsdiv2part3main svg {
+  visibility: visible;
+}
+
+.center2childsdiv3main p {
+  padding-top: 10px;
+}
+
+.center2childsdiv3main a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3da6ff;
+  font-weight: 500;
+}
+
+.center2childstimermain {
+  position: absolute;
+  top: 170px;
+  right: 5px;
+}
+
+.center2childstimermain p {
+  color: white;
+  background-color: #121212dc;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px 4px;
+  border-radius: 5px;
 }
