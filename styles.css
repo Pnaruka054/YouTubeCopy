@@ -161,7 +161,6 @@ body {
   display: flex;
   height: 90vh;
   width: 100%;
-  min-width: 398px;
 }
 
 .left {
@@ -407,7 +406,6 @@ body {
 .center2childs {
   margin: 10px;
   min-height: 320px;
-  max-height: 355px;
   width: 20vw;
   min-width: 343px;
   position: relative;
@@ -417,16 +415,13 @@ body {
 .center2childsdiv1 {
   width: 100%;
   min-width: 343px;
-  height: 60%;
   min-height: 193px;
-  max-height: 211px;
 }
 
 .center2childsdiv1 img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  object-fit: cover;
 }
 
 .center2childsdiv2 {
@@ -724,13 +719,6 @@ body {
   }
 }
 
-@media (max-width: 935px) {
-  #mainchild2 input {
-    width: 75%;
-    margin-left: 10px;
-  }
-}
-
 @media (max-width: 936px) {
   .center2 {
     grid-template-columns: repeat(1, 1fr);
@@ -748,11 +736,30 @@ body {
     width: 100%;
   }
 
+  #mainchild2 input {
+    border-radius: 40px;
+    width: 100%;
+  }
+
   #mainchild3svg1 {
     margin-left: 10px;
     margin-right: 2px;
     width: 30px;
     height: 30px;
+  }
+
+  .center2childs {
+    width: 95%;
+    margin-bottom: 2%;
+  }
+
+  .center2childsdiv2part2,
+  .center2childsdiv2part2main {
+    width: 100%;
+  }
+
+  .center2childsmain {
+    width: 95%;
   }
 
   #mainchild3svg2,
@@ -772,15 +779,15 @@ body {
   }
 }
 
-@media (max-width: 443px) {
+@media (max-width: 600px) {
   .main {
-    width: 100vw;
+    width: 100%;
     padding: 0 10px;
     justify-content: space-between;
   }
 
-  .center2 {
-    margin-left: 1%;
+  .main1 {
+    width: 100vw;
   }
 
   .center {
@@ -789,6 +796,14 @@ body {
 
   .left {
     display: none;
+  }
+
+  #blur1 {
+    right: -50px;
+  }
+
+  .center::-webkit-scrollbar {
+    width: 0px;
   }
 
   #mainchild1svg1 {
@@ -801,11 +816,6 @@ body {
 
   #mainchild2 {
     flex-basis: 100px;
-  }
-
-  #mainchild2 input {
-    border-radius: 40px;
-    width: 100%;
   }
 
   #mainchild2svg1,
