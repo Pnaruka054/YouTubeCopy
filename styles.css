@@ -731,7 +731,7 @@ body {
   }
 }
 
-@media (max-width: 818px) {
+@media (max-width: 936px) {
   .center2 {
     grid-template-columns: repeat(1, 1fr);
   }
