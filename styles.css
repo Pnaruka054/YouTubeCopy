@@ -291,6 +291,21 @@ body {
 
 .center {
   width: 83vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.center::-webkit-scrollbar {
+  width: 15px;
+}
+
+.center::-webkit-scrollbar-track {
+  background: #9b9b9b00;
+}
+
+.center::-webkit-scrollbar-thumb {
+  background: #8888887e;
+  border-radius: 20px;
 }
 
 .center1 {
@@ -303,15 +318,20 @@ body {
 #blur1 {
   width: 100px;
   height: 35px;
-  position: fixed;
+  position: absolute;
   right: -10px;
-  top: 68px;
+  top: 10px;
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0),
     rgb(15, 15, 15),
     rgb(15, 15, 15)
   );
+}
+
+#center1blur {
+  display: flex;
+  position: relative;
 }
 
 .center1::-webkit-scrollbar {
@@ -339,7 +359,6 @@ body {
   background-color: #3d3d3d;
   flex-shrink: 0;
   margin: 12px;
-  width: ;
 }
 
 .center1childs a {
@@ -359,8 +378,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   margin-top: 10px;
-  overflow-y: scroll;
-  height: 78vh;
+  overflow: scroll;
+  width: 99%;
 }
 
 .center2::-webkit-scrollbar {
@@ -369,8 +388,8 @@ body {
 
 .center2childs {
   margin: 10px;
-  height: 40vh;
   min-height: 320px;
+  max-height: 355px;
   width: 20vw;
   min-width: 343px;
   position: relative;
@@ -380,16 +399,16 @@ body {
 .center2childsdiv1 {
   width: 100%;
   min-width: 343px;
-  height: 40%;
+  height: 60%;
   min-height: 193px;
-  object-fit: contain;
+  max-height: 211px;
 }
 
 .center2childsdiv1 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 15px;
+  object-fit: cover;
 }
 
 .center2childsdiv2 {
@@ -496,7 +515,6 @@ body {
 
 .center2childsmain {
   margin: 10px;
-  height: 40vh;
   min-height: 320px;
   width: 20vw;
   min-width: 343px;
@@ -507,13 +525,11 @@ body {
 .center2childsdiv1main {
   width: 100%;
   min-width: 343px;
-
   min-height: 193px;
 }
 
 .center2childsdiv1main img {
   width: 100%;
-  height: 100%;
   border-radius: 15px;
 }
 
@@ -682,15 +698,11 @@ body {
   }
 
   .center2childsmain {
-    height: 330px; 
     width: 40vw;
-    border: 1px solid red ;
   }
 
   .center2childs {
-    height: 330px;
     width: 40vw;
-    border: 1px solid rgb(68, 0, 255) ;
   }
 }
 
@@ -705,6 +717,4 @@ body {
   .center2 {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  
 }
