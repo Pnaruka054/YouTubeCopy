@@ -682,12 +682,13 @@ body {
   }
 
   .center2childsmain {
-    height: 50vh;
+    height: 20px;
     width: 40vw;
+    border: 1px solid red ;
   }
 
   .center2childs {
-    height: 50vh;
+    height: 10px;
     width: 40vw;
   }
 }
@@ -704,30 +705,5 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  #mainchild1svg2 {
-    width: 80px;
-  }
-
-  #mainchild2svg1 {
-    width: 40px;
-  }
-
-  #mainchild1svg2 svg {
-    width: 100%;
-  }
-
-  #mainchild2svg2 {
-    display: none;
-  }
-
-  #mainchild3 {
-    margin-left: 10px;
-    margin-right: 20px;
-  }
-
-  #mainchild3svg1,
-  #mainchild3svg2 {
-    width: 30px;
-    height: 30px;
-  }
+  
 }
