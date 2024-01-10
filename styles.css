@@ -682,7 +682,7 @@ body {
   }
 
   .center2childsmain {
-    height: 330px;
+    height: 330px; 
     width: 40vw;
     border: 1px solid red ;
   }
