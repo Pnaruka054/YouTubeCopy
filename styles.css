@@ -511,7 +511,7 @@ body {
 
 .center2childstimer {
   position: absolute;
-  top: 170px;
+  top: 53%;
   right: 5px;
 }
 
@@ -792,7 +792,7 @@ body {
 
   .center {
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 
   .left {
