@@ -408,7 +408,6 @@ body {
   min-height: 320px;
   width: 20vw;
   min-width: 343px;
-  position: relative;
   cursor: pointer;
 }
 
@@ -416,6 +415,7 @@ body {
   width: 100%;
   min-width: 343px;
   min-height: 193px;
+  position: relative;
 }
 
 .center2childsdiv1 img {
@@ -511,7 +511,7 @@ body {
 
 .center2childstimer {
   position: absolute;
-  top: 170px;
+  bottom: 10px;
   right: 5px;
 }
 
@@ -531,7 +531,6 @@ body {
   min-height: 320px;
   width: 20vw;
   min-width: 343px;
-  position: relative;
   cursor: pointer;
 }
 
@@ -539,6 +538,7 @@ body {
   width: 100%;
   min-width: 343px;
   min-height: 193px;
+  position: relative;
 }
 
 .center2childsdiv1main img {
@@ -633,7 +633,7 @@ body {
 
 .center2childstimermain {
   position: absolute;
-  top: 170px;
+  bottom: 10px;
   right: 5px;
 }
 
