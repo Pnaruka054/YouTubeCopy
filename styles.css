@@ -161,6 +161,7 @@ body {
   display: flex;
   height: 90vh;
   width: 100%;
+  min-width: 398px;
 }
 
 .left {
@@ -771,11 +772,15 @@ body {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 443px) {
   .main {
     width: 100vw;
     padding: 0 10px;
     justify-content: space-between;
+  }
+
+  .center2 {
+    margin-left: 1%;
   }
 
   .center {
